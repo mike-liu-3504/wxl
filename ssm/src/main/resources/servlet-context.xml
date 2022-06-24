@@ -34,12 +34,12 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <!--    配置扫描器-->
+  <!--  &lt;!&ndash;    配置扫描器&ndash;&gt;
     <bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <!--        扫描com.xxx.dao这个包以及它的子包下的所有映射接口类-->
+        &lt;!&ndash;        扫描com.xxx.dao这个包以及它的子包下的所有映射接口类&ndash;&gt;
         <property name="basePackage" value="com.wangli.ssm.dao"></property>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
-    </bean>
+    </bean>-->
 
     <!--    文件上传-->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">

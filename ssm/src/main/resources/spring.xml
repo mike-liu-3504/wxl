@@ -63,11 +63,11 @@
         <property name="dataSource" ref="dataSource"></property>
         <!-- 加载mybatis.xml的核心配置文件 -->
         <property name="configLocation" value="classpath:mybatis.xml"></property>
-      <!--  <property name="mapperLocations" value="classpath:com/wangli/ssm/mapper/*.xml"></property>-->
+        <property name="mapperLocations" value="classpath:com/wangli/ssm/mapper/*.xml"></property>
     </bean>
 
     <!--    配置扫描器-->
-    <bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigure">
+    <bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!--        扫描com.xxx.dao这个包以及它的子包下的所有映射接口类-->
         <property name="basePackage" value="com.wangli.ssm.dao"></property>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
